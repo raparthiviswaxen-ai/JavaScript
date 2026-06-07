@@ -1,4 +1,4 @@
-let arr = [10,20,30,40,50];
+// let arr = [10,20,30,40,50];
 
 // forEach = it is a method, and it is a HOF.
 // forEach accepts a callback fn - callback fn has two args : item,index. forEach does not return anything.
@@ -13,10 +13,29 @@ let arr = [10,20,30,40,50];
 // accepts the callback fn - callback fn has two args(item,index)
 // It returns a new array as same length as the original array.
 
-let arrr = [20,30,40,50];
+// let arrr = [20,30,40,50];
 
-let val = arrr.map(function(item,index){
-     return item+item
+// let val = arrr.map(function(item,index){
+//      return item+item
+// })
+
+// console.log(val);
+
+
+//filter - method - HOF
+// accepts the callback fn - callback fn has two args(item,index).
+// it returns a new array but length is not compulsory.
+
+
+let arr = [10,22,30,33,40,45,50];
+
+let values = arr.filter(function(item,index){
+     if (item % 10 === 0){
+          return true;
+     }
+     else{
+          return false;
+     }
 })
+console.log(values);
 
-console.log(val);
